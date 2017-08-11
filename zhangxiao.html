@@ -14,25 +14,31 @@
 			position:absolute;
 			left: 550px;
 			top: 300px;
+			border: 1px solid #ccc;
+			cursor: pointer;
+			text-decoration: none;
+			color: #000;
 		}
 		#no {
 			position: absolute;
 			left: 800px;
 			top: 300px;
+			border: 1px solid #ccc;
+			cursor: pointer;
+			text-decoration: none;
+			color: #000;
 		}
 	</style>
 </head>
 <body>
 	<div id="name">张潇是不是大傻子</div>
-	<button id="yes">是啊，大傻子</button>	
-	<button id="no">当然不是，可聪明了</button>
+	<a id="yes" href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=%E6%99%BA%E9%9A%9C%20&oq=%25E4%25BA%25BA%25E4%25B8%25BA%25E4%25BB%2580%25E4%25B9%2588%25E5%258F%25AF%25E4%25BB%25A5%25E8%25BF%2599%25E4%25B9%2588%25E5%2582%25BB&rsv_pq=ede1905400047a11&rsv_t=39b5eJJpI6kTCYos8ldNDFPh6f2lfKRMJ3yEtOHjVrFyJ6k8e2k8MKbj0N4&rqlang=cn&rsv_enter=0&inputT=5403&rsv_sug3=70&rsv_sug1=48&rsv_sug7=100&rsv_sug4=5403">是啊，大傻子</a>	
+	<a id="no" href = "http://iask.sina.com.cn/b/5155b05ee4b0b2be3785199d.html">当然不是，可聪明了</a>
 
 	<script>
 		var btn1 = document.getElementById('yes');
 		var btn2 = document.getElementById('no');
-		btn1.onclick = function () {
-			alert("你还是很有眼光的！！！")
-		}
+		
 		btn2.onmouseover = function () {
 			this.style.left = Math.random() * 800 + 'px';
 			this.style.top = Math.random() * 600 + 'px';
